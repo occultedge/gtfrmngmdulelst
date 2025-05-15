@@ -3,42 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goat Farming Course Modules</title>
+  <title>Goat Farming in 7 Days - All Modules</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fdf9f6; color: #333; }
-    header { background: #842c2c; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 800px; margin: auto; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fef9f6; color: #333; }
+    header { background: #842c2c; color: white; padding: 30px 20px; text-align: center; }
+    section { padding: 30px 20px; max-width: 960px; margin: auto; }
     h1, h2 { color: #a94438; }
-    ul { list-style: none; padding: 0; }
-    li { background: #fff; border: 1px solid #ddd; margin-bottom: 10px; padding: 15px; border-radius: 6px; }
-    a { text-decoration: none; color: #842c2c; font-weight: bold; }
-    footer { background: #842c2c; color: white; text-align: center; padding: 10px; font-size: 14px; margin-top: 40px; }
-      .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-    .module-card { background: #fff; border: 2px solid #d6a07d; border-radius: 10px; padding: 20px; text-align: center; transition: transform 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .module-card:hover { transform: translateY(-5px); background: #fff5ee; }
-    .module-card a { text-decoration: none; color: #842c2c; font-weight: bold; font-size: 16px; display: block; }
-</style>
+    .tabs { display: flex; flex-wrap: wrap; margin-bottom: 20px; }
+    .tab-btn { flex: 1; padding: 10px 15px; background: #d6a07d; margin: 5px; border-radius: 5px; color: white; text-align: center; cursor: pointer; transition: background 0.3s; }
+    .tab-btn:hover, .tab-btn.active { background: #a94438; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.5s; }
+    .video-container { text-align: center; margin: 20px 0; }
+    iframe { width: 100%; max-width: 640px; height: 360px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .content-box { background: #fff; border: 1px solid #ddd; padding: 25px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+    .content-box ul { padding-left: 20px; }
+    .download-link { display: inline-block; background: #842c2c; color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; margin-top: 15px; font-weight: bold; }
+    .download-link:hover { background: #6f1f1f; }
+    footer { background: #842c2c; color: white; text-align: center; padding: 15px; font-size: 14px; margin-top: 40px; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
 </head>
 <body>
   <header>
     <h1>Goat Farming in 7 Days</h1>
-    <p>Select a module to start learning</p>
+    <p>Select a module below to get started</p>
   </header>
 
   <section>
-    <div class="module-grid">
-      <div class="module-card"><a href="https://occultedge.github.io/goatfrmngmdle1/">🐐 Day 1: Goat Farming Basics</a></div>
-      <div class="module-card"><a href="module2.html">🏠 Day 2: Housing & Environment</a></div>
-      <div class="module-card"><a href="module3.html">🥬 Day 3: Feeding & Nutrition</a></div>
-      <div class="module-card"><a href="module4.html">💊 Day 4: Health & Disease Management</a></div>
-      <div class="module-card"><a href="module5.html">🐐❤️ Day 5: Breeding & Reproduction</a></div>
-      <div class="module-card"><a href="module6.html">📋 Day 6: Daily Management & Growth</a></div>
-      <div class="module-card"><a href="module7.html">📈 Day 7: Marketing & Business Planning</a></div>
+    <div class="tabs">
+      <div class="tab-btn active" onclick="showTab(1)">Day 1</div>
+      <div class="tab-btn" onclick="showTab(2)">Day 2</div>
+      <div class="tab-btn" onclick="showTab(3)">Day 3</div>
+      <div class="tab-btn" onclick="showTab(4)">Day 4</div>
+      <div class="tab-btn" onclick="showTab(5)">Day 5</div>
+      <div class="tab-btn" onclick="showTab(6)">Day 6</div>
+      <div class="tab-btn" onclick="showTab(7)">Day 7</div>
     </div>
+
+    <div id="tab1" class="tab-content active">
+      <div class="content-box">
+        <h2>Day 1: Goat Farming Basics</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Goat Farming Basics Video" allowfullscreen></iframe>
+        </div>
+        <p>This module introduces you to the fundamentals of goat farming. Learn about local breeds, space needs, budget, and how to avoid common beginner mistakes.</p>
+        <ul>
+          <li>Why goat farming works in West Africa</li>
+          <li>Breeds: West African Dwarf, Sahelian, Kalahari Red</li>
+          <li>Basic setup: housing, feed, and capital</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 1 Notes</a>
+      </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+      <div class="content-box">
+        <h2>Day 2: Housing & Environment</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Goat Housing Video" allowfullscreen></iframe>
+        </div>
+        <p>Understand the importance of proper goat housing and how it affects health, hygiene, and productivity.</p>
+        <ul>
+          <li>Types of housing: raised, open, closed pens</li>
+          <li>Recommended floor types and spacing</li>
+          <li>Ventilation and cleanliness practices</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 2 Notes</a>
+      </div>
+    </div>
+
+    <div id="tab3" class="tab-content">
+      <div class="content-box">
+        <h2>Day 3: Feeding & Nutrition</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Feeding and Nutrition Video" allowfullscreen></iframe>
+        </div>
+        <p>Learn what goats eat and how to create a balanced feeding plan using locally available resources.</p>
+        <ul>
+          <li>Types of feeds: grass, browse, concentrates</li>
+          <li>Water and mineral requirements</li>
+          <li>Sample feeding schedule</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 3 Notes</a>
+      </div>
+    </div>
+
+    <div id="tab4" class="tab-content">
+      <div class="content-box">
+        <h2>Day 4: Health & Disease Management</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Goat Health Video" allowfullscreen></iframe>
+        </div>
+        <p>This module explains how to prevent and manage common goat diseases and maintain herd health.</p>
+        <ul>
+          <li>Signs of healthy and sick goats</li>
+          <li>Common diseases and treatments</li>
+          <li>Deworming, vaccinations, and record keeping</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 4 Notes</a>
+      </div>
+    </div>
+
+    <div id="tab5" class="tab-content">
+      <div class="content-box">
+        <h2>Day 5: Breeding & Reproduction</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Breeding Video" allowfullscreen></iframe>
+        </div>
+        <p>Gain knowledge on goat breeding systems, mating, and care of pregnant does and newborn kids.</p>
+        <ul>
+          <li>Mating age and heat cycle</li>
+          <li>Pregnancy signs and kidding care</li>
+          <li>Breeding plans for herd improvement</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 5 Notes</a>
+      </div>
+    </div>
+
+    <div id="tab6" class="tab-content">
+      <div class="content-box">
+        <h2>Day 6: Daily Management & Growth</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Goat Management Video" allowfullscreen></iframe>
+        </div>
+        <p>Understand the routines and best practices for managing your goat farm on a daily basis.</p>
+        <ul>
+          <li>Feeding and cleaning schedule</li>
+          <li>Handling and grouping goats</li>
+          <li>Monitoring growth and keeping records</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 6 Notes</a>
+      </div>
+    </div>
+
+    <div id="tab7" class="tab-content">
+      <div class="content-box">
+        <h2>Day 7: Marketing & Business Planning</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Marketing and Business Video" allowfullscreen></iframe>
+        </div>
+        <p>This final module helps you build a plan for making your goat farming venture financially sustainable.</p>
+        <ul>
+          <li>Market opportunities and pricing strategies</li>
+          <li>Basic business planning and budgeting</li>
+          <li>Growth and scaling tips</li>
+        </ul>
+        <a class="download-link" href="#">📥 Download Day 7 Notes</a>
+      </div>
+    </div>
+
   </section>
 
   <footer>
-    &copy; 2025 Occultedge Goat Farming Course | <a href="index.html" style="color: #ffe0cc;">Back to Home</a>
+    &copy; 2025 Occultedge Goat Farming Course
   </footer>
+
+  <script>
+    function showTab(num) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+      document.getElementById(`tab${num}`).classList.add('active');
+      buttons[num - 1].classList.add('active');
+    }
+  </script>
 </body>
 </html>
